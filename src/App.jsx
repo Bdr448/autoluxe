@@ -7,10 +7,12 @@ import AnimatedNavbar from "./components/AnimatedNavbar";
 import CTASection from "./components/CTASection";
 import Footer from "./components/Footer"; // ✅ NEW
 import ContactSection from "./components/ContactSection"; // ✅ NEW
+import GoogleVerification from "./components/GoogleVerification"; // ✅ ADDED
 
 function App() {
   return (
     <div className="w-screen min-h-screen overflow-x-hidden">
+      <GoogleVerification /> {/* ✅ Added here to inject meta tag */}
       <AnimatedNavbar />
       <section id="hero">
         <HeroSection />
