@@ -4,7 +4,7 @@ const GoogleVerification = () => {
   useEffect(() => {
     // Check if the tag already exists to avoid duplicates
     const existingMeta = document.querySelector(
-      'meta[name="google-site-verification"][content="RULZ_GC9mTHdwsb-iMzku2HgNwbrKCCM48Q7skXxqts"]'
+      '<meta name="google-site-verification" content="RULZ_GC9mTHdwsb-iMzku2HgNwbrKCCM48Q7skXxqts" />'
     );
 
     if (!existingMeta) {
